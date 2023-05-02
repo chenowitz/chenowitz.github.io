@@ -2,9 +2,9 @@
 
 ---
 
-### Category Name 1 
+### Machine Learning
 
-[Project 1 Title](/sample_page)
+[Classifying dog activity based on IMU data](/sample_page)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
@@ -17,7 +17,7 @@
 
 ---
 
-### Category Name 2
+### Embedded Software
 
 - [Project 1 Title](http://example.com/)
 - [Project 2 Title](http://example.com/)

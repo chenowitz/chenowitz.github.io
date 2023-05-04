@@ -6,6 +6,7 @@
 
 [Classifying dog activity based on IMU data](/sample_page)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
+Description Description Description
 
 ---
 [Project 2 Title](/pdf/sample_presentation.pdf)

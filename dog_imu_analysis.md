@@ -17,7 +17,7 @@ To simplify matters, I decided that all samples where one of the annotated behav
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 Instance where the assigned task was "walk" and the experimenters noted that one of three observed behaviors was walking
 
-### Class distribution
+#### Class distribution
 
 ### Model parameters
 

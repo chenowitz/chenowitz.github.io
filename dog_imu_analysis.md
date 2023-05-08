@@ -30,11 +30,7 @@ The distribution between activity classes was relatively uniform. Therefore, I d
 
 A typical train/validation/test breakdown is usually 80%/10%/10%, meaning that there would be roughly 37 dogs in the training set, 4 in the validation set, and 4 in the test set.
 
-Apart from other issues with this particular cost curve, the fact that the validation loss was lower than the training loss suggested that the data was underrepresenative of the training data.
-
-<img src="images/dog_imu_analysis/training_and_validation_loss_iteration_1.png"/>
-
-Based on this information, I chose to adjust the data split slightly to include 33 dogs in the training set, 6 in the validation set, and 6 in the test set.
+Due to the low number of samples, I chose to adjust the data split slightly to include 33 dogs in the training set, 6 in the validation set, and 6 in the test set.
 
 ### Model selection and parameters
 RNNs have the ability to____. I chose an LSTM because_____ and specifically, 
@@ -44,11 +40,15 @@ Overall, the final bi-directional LSTM achieved a X% accuracy on the test set.
 
 The final model was trained in X epochs. Further epochs showed an emerging gap between training and validation sets, indicating overfitting.  
 
-<img src="images/dog_imu_analysis/accuracy_iteration_3"/>
+<p align="center">
+<img src="images/dog_imu_analysis/accuracy_iteration_3" alt="app-screen" width="500"/>
+</p>
 
 However, given the relatively few number of samples in the validation set, the loss curve is rather noisy.    
 
-<img src = "images/dog_imu_analysis/loss_iteration_3"/>
+<p align="center">
+<img src = "images/dog_imu_analysis/loss_iteration_3" alt="app-screen" width="500"/>
+</p>
 
 #### Confusion matrix
 

@@ -18,9 +18,12 @@ To simplify matters, I decided that all samples where one of the annotated behav
 Instance where the assigned task was "walk" and the experimenters noted that one of three observed behaviors was walking
 
 #### Class distribution and data split
-The distribution between activity classes was relatively uniform. Therefore, no corrections were made for a skewed dataset.
-<img src="images/dog_imu_analysis/class_distribution_bar_graph.png" alt="app-screen" width="300" />
-<img src="images/dog_imu_analysis/class_distribution_numbers.png"/>
+The distribution between activity classes was relatively uniform. Therefore, no corrections were made for a skewed dataset.  
+
+<img src="images/dog_imu_analysis/class_distribution_bar_graph.png" alt="app-screen" width="500" />
+<p align="center">
+<img src="images/dog_imu_analysis/class_distribution_numbers.png" alt="app-screen" width="300"/>
+</p>
 
 A typical train/validation/test breakdown is usually 80%/10%/10%, meaning that there would be roughly 37 dogs in the training set, 4 in the validation set, and 4 in the test set.
 

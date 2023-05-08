@@ -4,8 +4,8 @@
 
 ### Machine Learning
 
-[Classifying dog activity based on IMU data](/sample_page)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+[Classifying dog activity based on IMU data](/dog_imu_analysis)
+<img src="images/dog_imu_analysis/sato_grass.JPG" alt="app-screen" width="300"/>  
 Description Description Description
 
 ---

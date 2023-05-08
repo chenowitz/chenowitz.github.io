@@ -9,7 +9,7 @@ The authors of the original study chose to perform classification using feature 
 
 The original dataset was a little wonky to interpret in that the experimenters assigned the dogs one of 7 tasks and then manually annotated behaviors that the dog was actually exhibiting during that assigned task. The number of classes that they chose to classify in their paper doesn't completely match all the behaviors that they annotated in their raw data. 
 
-<img src="images/dog_imu_analysis/raw_data?raw=true"/>
+<img src="images/dog_imu_analysis/raw_data.png"/>
 Sample of the raw data
 
 To simplify matters, I decided that all samples where one of the annotated behaviors was the same as the assigned task qualified as a legitimate instance of that activity.
@@ -19,8 +19,8 @@ Instance where the assigned task was "walk" and the experimenters noted that one
 
 #### Class distribution and data split
 The distribution between activity classes was relatively uniform. Therefore, no corrections were made for a skewed dataset.
-<img src="images/dog_imu_analysis/class_distribution_bar_graph.png?raw=true"/>
-<img src="images/dog_imu_analysis/class_distribution_numbers.png?raw=true"/>
+<img src="images/dog_imu_analysis/class_distribution_bar_graph.png"/>
+<img src="images/dog_imu_analysis/class_distribution_numbers.png"/>
 
 A typical train/validation/test breakdown is usually 80%/10%/10%, meaning that there would be roughly 37 dogs in the training set, 4 in the validation set, and 4 in the test set.
 

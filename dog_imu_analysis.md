@@ -41,13 +41,13 @@ Overall, the final bi-directional LSTM achieved a X% accuracy on the test set.
 The final model was trained in X epochs. Further epochs showed an emerging gap between training and validation sets, indicating overfitting.  
 
 <p align="center">
-<img src="images/dog_imu_analysis/accuracy_iteration_3" alt="app-screen" width="500"/>
+<img src="images/dog_imu_analysis/accuracy_iteration_3.png" alt="app-screen" width="500"/>
 </p>
 
 However, given the relatively few number of samples in the validation set, the loss curve is rather noisy.    
 
 <p align="center">
-<img src = "images/dog_imu_analysis/loss_iteration_3" alt="app-screen" width="500"/>
+<img src = "images/dog_imu_analysis/loss_iteration_3.png" alt="app-screen" width="500"/>
 </p>
 
 #### Confusion matrix

@@ -11,7 +11,7 @@
 Activity classification using publically available dog IMU data. </br> [Jupyter Notebook](https://7969a929c4f90c0e-dot-us-west1.notebooks.googleusercontent.com/lab?authuser=0&username=Kristine_Chen)
 
 ---
-[Project 2 Title](/pdf/sample_presentation.pdf)
+[Comparative analysis of different approaches in human activity recognition (HAR)](/pdf/sample_presentation.pdf)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---

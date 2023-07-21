@@ -55,14 +55,14 @@ The final model was trained in 40 epochs. Further epochs showed an emerging gap 
 However, given the relatively few number of samples in the validation set, the loss curve was still rather noisy.    
 
 <p align="center">
-<img src = "images/dummy_thumbnail.jpg?raw=true"/>
+<img src="images/dog_imu_analysis/loss_iteration_3.png" alt="app-screen" width="500"/>
 </p>
 
 #### Confusion matrix
 
 <p align="center">
-<img src="images/dog_imu_analysis/class_distribution_bar_graph.png" alt="app-screen" width="500" />
-<img src="images/dog_imu_analysis/class_distribution_numbers.png" alt="app-screen" width="500"/>
+<img src="images/dog_imu_analysis/confusion_matrix_iteration_3.png" alt="app-screen" width="500" />
+<img src="images/dog_imu_analysis/f1_score_table_iteration_3.png" alt="app-screen" width="500"/>
 </p>
 
 

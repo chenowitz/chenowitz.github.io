@@ -19,12 +19,7 @@ The original dataset was a little wonky to interpret. The experimenters assigned
  <em>Raw x-axis accelerometer values for an individual dog</em>
 </p>
 
-To simplify matters, I decided that all samples where one of the annotated behaviors was the same as the assigned task qualified as a legitimate instance of that activity.  
-
-<p align="center">
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
- <em>Instance where the assigned task was "walk" and the experimenters noted that one of three observed behaviors was walking</em>
-</p>
+To simplify matters, I decided that all samples where one of the annotated behaviors was the same as the assigned task qualified as a legitimate instance of that activity (see above spreadsheet screenshot for 'Task' and 'Behavior' columns). 
 
 #### 2. Class distribution and data split
 The distribution between activity classes was relatively uniform. Therefore, I didn't take any additional measures to change the class distribution of the dataset.  

@@ -1,13 +1,13 @@
-## Analyzing dog IMU from Kaggle
+## Analyzing human activity data collected from a smartphone (via Kaggle)
 
 **Project description:** I used a publicly available dataset from Kaggle to get a better feel for activity classification based on IMU data.
 
-### 1. Preprocessing the dataset
+### 1. The dataset
 
-The original dataset consisted of IMU data from 45 dogs of different breeds. 
-The authors of the original study chose to perform classification using feature engineering followed by a linear classifier. I wanted to see if I could acheive comparable results using an RNN without additional feature engineering.  
+The original dataset consisted of . 
+The authors of the original study chose to . 
+I wanted to .  
 
-The original dataset was a little wonky to interpret. The experimenters assigned the dogs one of 7 tasks and then manually annotated behaviors that the dog actually performed during the assigned task. They did not make all of these annotated behaviors actual classes for their activity classification.
 
 <p align="center">
 <img src="images/dog_imu_analysis/raw_data.png" description="Sample of the raw data"/>
@@ -19,26 +19,38 @@ The original dataset was a little wonky to interpret. The experimenters assigned
  <em>Raw x-axis accelerometer values for an individual dog</em>
 </p>
 
-To simplify matters, I decided that all samples where one of the annotated behaviors was the same as the assigned task qualified as a legitimate instance of that activity (see above spreadsheet screenshot for 'Task' and 'Behavior' columns). 
 
 #### 2. Class distribution and data split
-The distribution between activity classes was relatively uniform. Therefore, I didn't take any additional measures to change the class distribution of the dataset.  
+The data was already pre-divided into separate train and test CSVs.  
 
 <p align="center">
-<img src="images/dog_imu_analysis/class_distribution_bar_graph.png" alt="app-screen" width="500" /> </br>
-<img src="images/dog_imu_analysis/class_distribution_numbers.png" alt="app-screen" width="300"/>
+<img src="images/human_activity_smartphone/class_distribution_counts.png" alt="app-screen" width="500" /> </br>
 </p>
 
 A typical train/validation/test breakdown is usually 80%/10%/10%, meaning that there would be roughly 37 dogs in the training set, 4 in the validation set, and 4 in the test set.
 
 Due to the low number of samples, I chose to adjust the data split slightly to include 33 dogs in the training set, 6 in the validation set, and 6 in the test set.
 
-### 3. Model selection and parameters
-I chose an LSTM because these models are capable of learning long term dependencies in sequenced data. I chose a bi-directional LSTM specifically because BLSTMs are able to capture sequential dependencies in both directions of the sequence, and I thought this would be beneficial for analysis of a kinematic dataset.  
+### 3. Data exploration
+#### Summary statistics
+TODO: insert image
+#### Dimensionality reduction
 
-However, BLSTMs are very computationally expensive. For completeness, it would likely be worthwhile to compare the performance to that of a regular LSTM to ensure that the additional computational complexity actually results in an improvement in model performance.
+##### PCA
+##### LDA
+#### Non-linear data visualization
+##### t-SNE
+#### Feature selection via a Random Forest Classifier
 
-### 4. Result
+### 4. Model selection and parameters
+Based on initial data exploration, it seemed like a linear model had the potential to perform well on this dataset.
+#### Linear SVM
+##### Non-linear kernels - just for kicks
+#### Basic Neural Network
+##### Hyperparameters
+##### Tuning with Optuna
+
+### 5. Result
 Overall, the final bi-directional LSTM achieved a 84% accuracy on the test set.  
 
 The final model was trained in 40 epochs. Further epochs showed an emerging gap between training and validation sets, indicating overfitting.  

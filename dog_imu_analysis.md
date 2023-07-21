@@ -44,7 +44,7 @@ I chose an LSTM because these models are capable of learning long term dependenc
 However, BLSTMs are very computationally expensive. For completeness, it would likely be worthwhile to compare the performance to that of a regular LSTM to ensure that the additional computational complexity actually results in an improvement in model performance.
 
 ### 4. Result
-Overall, the final bi-directional LSTM achieved a X% accuracy on the test set.  
+Overall, the final bi-directional LSTM achieved a 84% accuracy on the test set.  
 
 The final model was trained in 40 epochs. Further epochs showed an emerging gap between training and validation sets, indicating overfitting.  
 

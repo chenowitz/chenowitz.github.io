@@ -16,6 +16,7 @@ Activity classification using an LSTM on publically available dog IMU data.
 <p align="center">
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 </p>
+
 ---
 
 ### No one: 

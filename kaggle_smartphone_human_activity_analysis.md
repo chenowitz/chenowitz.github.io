@@ -37,11 +37,28 @@ TODO: insert image
 #### Non-linear data visualization
 ##### t-SNE
 #### Feature selection via a Random Forest Classifier
-Random Forest Classifers are often used for 
+Random Forest Classifers are often used for .........
+in general good predictive performance, low overfitting, and easy interpretability
+
+In other words, it is easy to compute how much each variable is contributing to the decision.
+
+I ran a Random Forest Classifier on only the training data to avoid overfitting. I experimented with number of trees, trying values of 100, 500, and 1000. The RFC selected different number of features depending on the number of decision trees. 
+
+# TODO: insert tabel
+
+Out of the 251 features, X features are linearly independent (based on the rank of X_train). </br>
+The Random Forest Classifier selected 126 features out of 251. 
+
+I later used this reduced feature set to train some models to see if the reduced feature set would drastically affect accuracy. 
+
+# TODO: random forest classifier plot; gini impurity
+
 ### 4. Model selection and parameters
 Based on initial data exploration, it seemed like a linear model had the potential to perform well on this dataset.
 #### Linear SVM
-SVMs aim to 
+SVMs aim to
+##### Linear SVM with reduced feature set
+I used the reduced feature set selected by the Random Forest Classifier above to train a linear SVM to see if 
 ##### Non-linear kernels - just for kicks
 #### Basic Neural Network
 ##### Hyperparameters

@@ -6,34 +6,26 @@
 
 The original dataset consisted of smartphone data from a Samsung Galaxy S II worn about the waist by 30 volunteers between the ages of 19 and 48. Each individual performed six activities: walking, walking upstairs, walking downstairs, sttting, standing, and laying. 
 
-Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data.
+Triaxial accelerometer and gyroscope data was captured at a constant rate of 50Hz. The experimenters video-recorded the trials and manually labeled the activities. These sensor signals were then preprocessed through the application of noise filters and then resampled in fixed-width sliding windows of 2.56 seconds with 50% overlap (128 readings/window). The entire dataset contains samples from 10299 time steps (after resampling).
 
-The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. . 
-The authors of the original study chose to . 
-I wanted to .  
+In addition, acceleration was separated into gravitational and body motion components using a Butterworth low-pass filter. A cutoff frequency of 0.3 Hz was used as the threshold for the gravitational contribution, which was assumed to be low frequency compared to body motion contributions.
 
-
+The experimenters also included other features from the time and frequency domains for a total of 261 features.
+ 
 <p align="center">
 <img src="images/dog_imu_analysis/raw_data.png" description="Sample of the raw data"/>
  <em>Sample of the raw data</em>
 </p>
 
-<p align="center">
-<img src="images/dog_imu_analysis/time_series_dog_16_ax.png"/>
- <em>Raw x-axis accelerometer values for an individual dog</em>
-</p>
-
 
 #### 2. Class distribution and data split
-The data was already pre-divided into separate train and test CSVs.  
+The data was already pre-divided into separate train and test CSVs with approximately 70% of the data in the training set and 30% of the data in the test set.
+
+The data are slightly biased toward stationary activities, but overall, there is not a vast discrepancy between the number of samples in the 6 classes.
 
 <p align="center">
 <img src="images/human_activity_smartphone/class_distribution_counts.png" alt="app-screen" width="500" /> </br>
 </p>
-
-A typical train/validation/test breakdown is usually 80%/10%/10%, meaning that there would be roughly 37 dogs in the training set, 4 in the validation set, and 4 in the test set.
-
-Due to the low number of samples, I chose to adjust the data split slightly to include 33 dogs in the training set, 6 in the validation set, and 6 in the test set.
 
 ### 3. Data exploration
 #### Summary statistics
@@ -45,10 +37,11 @@ TODO: insert image
 #### Non-linear data visualization
 ##### t-SNE
 #### Feature selection via a Random Forest Classifier
-
+Random Forest Classifers are often used for 
 ### 4. Model selection and parameters
 Based on initial data exploration, it seemed like a linear model had the potential to perform well on this dataset.
 #### Linear SVM
+SVMs aim to 
 ##### Non-linear kernels - just for kicks
 #### Basic Neural Network
 ##### Hyperparameters

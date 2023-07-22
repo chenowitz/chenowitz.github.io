@@ -43,7 +43,7 @@ in general good predictive performance, low overfitting, and easy interpretabili
 In other words, it is easy to compute how much each variable is contributing to the decision.
 
 I ran a Random Forest Classifier on only the training data to avoid overfitting. I experimented with number of trees, trying values of 100, 500, and 1000. The RFC selected different number of features depending on the number of decision trees. 
-
+# TODO: determine if lots of my features are highly correlated b/c highly correlated features will be weighted less
 # TODO: insert tabel
 
 Out of the 251 features, X features are linearly independent (based on the rank of X_train). </br>

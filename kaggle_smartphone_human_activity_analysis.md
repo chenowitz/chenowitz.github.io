@@ -36,7 +36,17 @@ TODO: insert image
 ##### LDA
 #### Non-linear data visualization
 ##### t-SNE
-#### Feature selection via a Random Forest Classifier
+#### Feature selection
+The ultimate goal of feature selection is to come up with a subset of the original feature set in order to reduce model complexity without compromising accuracy. Smaller feature sets tend to be computationally less expensive and easier for humans to comprehend. </br>
+There are many ways to conduct feature selection. I chose to examine univariate feature selection for classification, reduced feature elimination with cross validation (RFECV) and a Random Forest Classifier.
+
+##### Univariate feature selection
+I first normalized the feature set to have values between [0,1] because Pearson's Correlation is only valid for positive values. After selecting only features whose p-values were less than 0.05, the number of features was reduced from 561 to 528. 
+<p align="center">
+<img src="images/human_activity_smartphone/class_distribution_counts.png" alt="app-screen" width="500" /> </br>
+</p>
+
+##### Random Forest Classifier
 Random Forest Classifers are often used for .........
 in general good predictive performance, low overfitting, and easy interpretability
 

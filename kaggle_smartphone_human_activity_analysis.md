@@ -25,6 +25,12 @@ The data are slightly biased toward stationary activities, but overall, there is
 
 <p align="center">
 <img src="images/human_activity_smartphone/class_distribution_counts.png" alt="app-screen" width="500" /> </br>
+ <em>Bar plot of class counts</em>
+</p>
+
+<p align="center">
+<img src="images/human_activity_smartphone/sample_count_table.png" alt="app-screen" width="500" /> </br>
+ <em>Tabulated class counts</em>
 </p>
 
 ### 3. Data exploration
@@ -43,7 +49,8 @@ There are many ways to conduct feature selection. I chose to examine univariate 
 ##### Univariate feature selection
 I first normalized the feature set to have values between [0,1] because Pearson's Correlation is only valid for positive values. After selecting only features whose p-values were less than 0.05, the number of features was reduced from 561 to 528. 
 <p align="center">
-<img src="images/human_activity_smartphone/class_distribution_counts.png" alt="app-screen" width="500" /> </br>
+<img src="images/human_activity_smartphone/contracted_view_univariate_table.png" alt="app-screen" width="500" /> </br>
+ <em>Truncated dataframe of p-values and Chi-squared values associated with all various features</em>
 </p>
 
 ##### Random Forest Classifier

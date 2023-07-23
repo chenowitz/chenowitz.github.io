@@ -10,7 +10,7 @@ Triaxial accelerometer and gyroscope data was captured at a constant rate of 50H
 
 In addition, acceleration was separated into gravitational and body motion components using a Butterworth low-pass filter. A cutoff frequency of 0.3 Hz was used as the threshold for the gravitational contribution, which was assumed to be low frequency compared to body motion contributions.
 
-The experimenters also included other features from the time and frequency domains for a total of 261 features.
+The experimenters also included other features from the time and frequency domains for a total of 561 features.
  
 <p align="center">
 <img src="images/dog_imu_analysis/raw_data.png" description="Sample of the raw data"/>

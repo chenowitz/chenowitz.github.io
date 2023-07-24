@@ -1,3 +1,6 @@
+## Most useful features
+## What they are and why
+
 ## Analyzing human activity data collected from a smartphone (via Kaggle)
 
 **Project description:** I used a publicly available dataset from Kaggle to get a better feel for activity classification based on IMU data.

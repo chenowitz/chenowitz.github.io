@@ -40,8 +40,28 @@ The data are slightly biased toward stationary activities, but overall, there is
 #### Summary statistics
 TODO: insert image
 #### Dimensionality reduction
-
+In order to better understand the data, I conducted dimensionality reduction using both PCA and LDA on the entire dataset.
 ##### PCA
+PCA seeks to identify the principal components that maximize the overall variance of the data. <\br>
+
+The first principal component captured 50.6% of the variance in the data while the second principal component captured roughly 6.2%. The third and fourth components captured 2.7% and 2.4% respectively. In interpreting the loading matrices, 
+
+10 features 
+fBodyAcc-sma()
+fBodyAccJerk-sma()
+fBodyGyro-sma()
+tBodyAccJerk-sma()
+tBodyAccJerkMag-sma()
+tBodyAccJerkMag-mean()
+fBodyBodyAccJerkMag-sma()
+fBodyBodyAccJerkMag-mean()
+tBodyAccJerkMag-mad()
+tBodyAccJerkMag-std()
+
+<p align="center">
+<img src="images/human_activity_smartphone/scree_plot.png" alt="app-screen" width="500" /> </br>
+ <em>Tabulated class counts</em>
+</p>
 ##### LDA
 #### Non-linear data visualization
 ##### t-SNE

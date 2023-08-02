@@ -45,23 +45,36 @@ In order to better understand the data, I conducted dimensionality reduction usi
 PCA seeks to identify the principal components that maximize the overall variance of the data. <\br>
 
 The first principal component captured 50.6% of the variance in the data while the second principal component captured roughly 6.2%. The third and fourth components captured 2.7% and 2.4% respectively. In interpreting the loading matrices, 
-
-10 features 
-fBodyAcc-sma()
-fBodyAccJerk-sma()
-fBodyGyro-sma()
-tBodyAccJerk-sma()
-tBodyAccJerkMag-sma()
-tBodyAccJerkMag-mean()
-fBodyBodyAccJerkMag-sma()
-fBodyBodyAccJerkMag-mean()
-tBodyAccJerkMag-mad()
-tBodyAccJerkMag-std()
-
+</br>
+10 features that dominate PC 1: </br>
+- fBodyAcc-sma() </br>
+- fBodyAccJerk-sma() </br>
+- fBodyGyro-sma() </br>
+- tBodyAccJerk-sma() </br>
+- tBodyAccJerkMag-sma() </br>
+- tBodyAccJerkMag-mean() </br>
+- fBodyBodyAccJerkMag-sma() </br>
+- fBodyBodyAccJerkMag-mean() </br>
+- tBodyAccJerkMag-mad() </br>
+- tBodyAccJerkMag-std() </br>
+</br>
 <p align="center">
-<img src="images/human_activity_smartphone/scree_plot.png" alt="app-screen" width="500" /> </br>
+<img src="images/human_activity_smartphone/pca_all_classes.png" alt="app-screen" width="500" /> </br>
  <em>Tabulated class counts</em>
 </p>
+</br>
+10 features that dominate PC 2: </br>
+- fBodyAcc-meanFreq()-Z </br>
+- tBodyGyroMag-arCoeff()1 </br>
+- fBodyAccMag-meanFreq() </br>
+- tGravityAcc-arCoeff()-Z,1 </br>
+- tBodyAccMag-arCoeff()1 </br>
+- tGravityAccMag-arCoeff()1 </br>
+- tGravityAcc-arCoeff()-Z,3 </br>
+- tGravityAcc-arCoeff()-Y,3 </br>
+- fBodyAcc-meanFreq()-Y </br>
+- fBodyBodyGyroMag-meanFreq() </br>
+
 ##### LDA
 #### Non-linear data visualization
 ##### t-SNE

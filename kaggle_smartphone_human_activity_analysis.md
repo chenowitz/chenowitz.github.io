@@ -142,7 +142,19 @@ I ran a Random Forest Classifier on only the training data to avoid overfitting.
 # 4. Model selection and parameters
 Based on initial data exploration, it seemed like a linear model had the potential to perform well on this dataset.
 ## Linear SVM
-SVMs aim to find the optimal hyperplane that maximizes the margin between support vectors and a chosen hyperplane.
+SVMs aim to find the optimal hyperplane that maximizes the margin between support vectors (data points closer to the potential hyperplane) and a chosen hyperplane.
+
+I used Optuna to explore a variety of SVM kernels (rbf, poly, sigmoid, linear) as well as different values of the hyperparameter C, which dictates the SVM's sensitivity toward misclassification. With large values of C, the optimization chooses a smaller-margin hyperplane only if the chosen hyperplane is able to classify examples correctly. A small value of C will optimize for a hyperplane with a larger margin, even if the chosen hyperplane misclassifies more examples. 
+
+The best accuracy I was able to achieve was 96% with a linear kernel and a C value of ~0.0623.
+
+<p align="center">
+<img src="images/human_activity_smartphone/cm_svm_linear_kernel.png" alt="app-screen" width="500" /> </br>
+ <em>Confusion matrix for optimized linear SVM kernel</em>
+</p>
+
+The confusion matrix highlights the fact that most misclassifications either occur between certain static classes or walking classes; there are no instances in which walking classes have been misclassified as static classes or vice versa.
+
 ### Binary classifiers
 The default classifier for multiclass classification using sklearn's SVM is is one vs. one (as opposed to one vs. all). Because there are 6 classes, 15 hyperplanes are generated. Below, I have plotted the top ten features most positively correlated with class distinction and the top ten features most negatively correlated with class distinction.
 <p float="middle">

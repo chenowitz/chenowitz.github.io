@@ -42,10 +42,22 @@ TODO: insert image
 #### Dimensionality reduction
 In order to better understand the data, I conducted dimensionality reduction using both PCA and LDA on the entire dataset.
 ##### PCA
-PCA seeks to identify the principal components that maximize the overall variance of the data. <\br>
+PCA seeks to identify the principal components that maximize the overall variance of the data.
 
-The first principal component captured 50.6% of the variance in the data while the second principal component captured roughly 6.2%. The third and fourth components captured 2.7% and 2.4% respectively. In interpreting the loading matrices, 
-</br>
+The first principal component captured 50.6% of the variance in the data while the second principal component captured roughly 6.2%. The third and fourth components captured 2.7% and 2.4% respectively. 
+
+<p align="center">
+<img src="images/human_activity_smartphone/scree_plot.png" alt="app-screen" width="500" /> </br>
+ <em>Scree plot showing the variance captured by the top 4 principal components</em>
+</p>
+
+<p align="center">
+<img src="images/human_activity_smartphone/pca_all_classes.png" alt="app-screen" width="500" /> </br>
+ <em>PCA plot for all classes</em>
+</p>
+
+For this particular dataset, the top two PCs did not correspond to directions of linear separability. However, in interpreting the loading matrices, we can identify the features that account for most of the variability in the dataset.
+
 10 features that dominate PC 1: </br>
 - fBodyAcc-sma() </br>
 - fBodyAccJerk-sma() </br>
@@ -57,12 +69,7 @@ The first principal component captured 50.6% of the variance in the data while t
 - fBodyBodyAccJerkMag-mean() </br>
 - tBodyAccJerkMag-mad() </br>
 - tBodyAccJerkMag-std() </br>
-</br>
-<p align="center">
-<img src="images/human_activity_smartphone/pca_all_classes.png" alt="app-screen" width="500" /> </br>
- <em>Tabulated class counts</em>
-</p>
-</br>
+
 10 features that dominate PC 2: </br>
 - fBodyAcc-meanFreq()-Z </br>
 - tBodyGyroMag-arCoeff()1 </br>

@@ -103,7 +103,7 @@ When we analyze the dataset in terms of only the walking classes and the static 
  <em>LDA on only the static classes: LAYING, SITTING, STANDING</em>
 </p>
 
-In the static class analysis, graphic above, the STANDING and SITTING classes continue to have quite a bit of overlap. I attempted to see if I could get better separability by conducting LDA on only those two classes.
+In the static class analysis graphic above, the STANDING and SITTING classes continue to have quite a bit of overlap. I attempted to see if I could get better separability by conducting LDA on only those two classes.
 
 <p align="center">
 <img src="images/human_activity_smartphone/lda_pca_2_classes.png" alt="app-screen" width="500" /> </br>

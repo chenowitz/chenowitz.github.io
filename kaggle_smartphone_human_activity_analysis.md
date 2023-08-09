@@ -83,10 +83,46 @@ For this particular dataset, the top two PCs did not correspond to directions of
 - fBodyBodyGyroMag-meanFreq() </br>
 
 ##### LDA
+Unlike PCA, LDA or Linear Discriminant Analysis, is intended to maximize interclass differences.
+When looking at only the top two discriminant components, there is decent separation between the static classes (LAYING, SITTING, STANDING) and the non-static or walking classes (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS).
+
+<p align="center">
+<img src="images/human_activity_smartphone/lda_all.png" alt="app-screen" width="500" /> </br>
+ <em>LDA on all classes</em>
+</p>
+
+When we analyze the dataset in terms of only the walking classes and the static classes, we get even better linear separability.
+
+<p align="center">
+<img src="images/human_activity_smartphone/lda_walking_classes_only.png" alt="app-screen" width="500" /> </br>
+ <em>LDA on only the walking classes: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS</em>
+</p>
+
+<p align="center">
+<img src="images/human_activity_smartphone/lda_static_classes_only.png" alt="app-screen" width="500" /> </br>
+ <em>LDA on only the static classes: LAYING, SITTING, STANDING</em>
+</p>
+
+In the static class analysis, graphic above, the STANDING and SITTING classes continue to have quite a bit of overlap. I attempted to see if I could get better separability by conducting LDA on only those two classes.
+
+<p align="center">
+<img src="images/human_activity_smartphone/lda_pca_2_classes.png" alt="app-screen" width="500" /> </br>
+ <em>LDA on only the SITTING and STANDING classes</em>
+</p>
+
+The separation between SITTING and STANDING still does not have the same amount of margin between them as the other classes, but based on the linear separability of most of the classes using LDA, I determined that this dataset might be a good candidate for a linear classification method.
+
 #### Non-linear data visualization
 ##### t-SNE
-t-distributed stochastic neighbor embedding is a method for visualizing high-dimensional data in lower dimensional space (2-3D). It is a non-linear method of dimensionality reduction that preserves small pairwise distances or local similarities. A similarity measure is calculated in a high dimensional space and a low dimensional space and then attempts to optimize the disparate similarity measures with a cost function. 
-</br>
+t-distributed stochastic neighbor embedding is a method for visualizing high-dimensional data in lower dimensional space (2-3D). It is a non-linear method of dimensionality reduction that preserves small pairwise distances or local similarities. A similarity measure is calculated in a high dimensional space and a low dimensional space and then attempts to optimize the disparate similarity measures with a cost function.
+
+Because this dataset has six classes, I thought it would be interesting to use t-SNE to visualize the data.
+
+<p align="center">
+<img src="images/human_activity_smartphone/t-sne.png" alt="app-screen" width="500" /> </br>
+ <em>t-SNE plot for all classes</em>
+</p>
+
 #### Feature selection
 The ultimate goal of feature selection is to come up with a subset of the original feature set in order to reduce model complexity without compromising accuracy. Smaller feature sets tend to be computationally less expensive and easier for humans to comprehend. </br>
 There are many ways to conduct feature selection. I chose to examine univariate feature selection for classification, reduced feature elimination with cross validation (RFECV) and a Random Forest Classifier.

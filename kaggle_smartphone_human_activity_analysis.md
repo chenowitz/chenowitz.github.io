@@ -103,9 +103,12 @@ The separation between SITTING and STANDING still does not have the same amount 
 
 ## Non-linear data visualization
 ### t-SNE
-t-distributed stochastic neighbor embedding is a method for visualizing high-dimensional data in lower dimensional space (2-3D). It is a non-linear method of dimensionality reduction that preserves small pairwise distances or local similarities. A similarity measure is calculated in a high dimensional space and a low dimensional space and then attempts to optimize the disparate similarity measures with a cost function.
+t-distributed stochastic neighbor embedding is a method for visualizing high-dimensional data in lower dimensional space (2-3D). It is a non-linear method of dimensionality reduction that preserves small pairwise distances or local similarities. A similarity measure is calculated in a high dimensional space and a low dimensional space and then an attempt is made to optimize these different similarity measures with a cost function.
 
 Because this dataset has six classes, I thought it would be interesting to use t-SNE to visualize the data.
+Classes 0, 1, and 2 correspond to 'STANDING', 'SITTING', and 'LAYING', respectively, while classes 3, 4, and 5 correspond to 'WALKING', 'WALKING_DOWNSTAIRS', and 'WALKING_UPSTAIRS'. 
+
+In this method of visualization, the boundary between static and non-static/walking classes is once again clear, while it remains difficult to distinguish between activities within each group. 
 
 <p align="center">
 <img src="images/human_activity_smartphone/t-sne.png" alt="app-screen" width="500" /> </br>

@@ -158,7 +158,7 @@ The confusion matrix highlights the fact that most misclassifications either occ
 ### Feature importance for a linear SVM
 The default classifier for multiclass classification using sklearn's SVM is is one vs. one (as opposed to one vs. all). Because there are 6 classes, 15 hyperplanes are generated - each separating two classes. The 'coef_' attribute of SVC yields a 15x562 matrix of weights because there are 15 hyperplanes and 562 features. The direction provides the predicted class. If the dot product of a point with the vector is positive, it belongs to the positive class, if it is negative it belongs to the negative class.
 
-The magnitude of the coefficients relative to the other ones gives an indication of how important the feature was for the separation. For these plots, the blue features are positively correlated with the class listed first in the title with larger bars indicating increasing importance, whereas the red features are positively correlated with the class listed second in the title (larger bars also indicated increasing importance).
+The magnitude of the coefficients relative to the other ones gives an indication of how important the feature was for the separation. For these plots, the blue features are positively correlated with the class listed first in the title with larger bars indicating increasing importance, whereas the red features are positively correlated with the class listed second in the title (larger bars also indicating increasing importance).
 
 <p float="middle">
   <img src="images/human_activity_smartphone/svm_0.png" width="425" height="150" />

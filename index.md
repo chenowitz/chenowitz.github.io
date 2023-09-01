@@ -17,8 +17,7 @@ Activity classification using an LSTM on publically available dog IMU data.
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 </p>
 
----
-
+<!--
 ### No one: 
 ### Me:
 
@@ -26,7 +25,7 @@ Activity classification using an LSTM on publically available dog IMU data.
 <p align="center">
 <img src="images/hand_tuned_cv_thermostat/segmentation_is_hard.png" alt="app-screen" width="300"/>
 </p>
-<!--
+
 [Project 3 Title](http://example.com/)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 

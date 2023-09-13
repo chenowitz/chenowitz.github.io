@@ -12,7 +12,7 @@ Activity classification using an LSTM on publically available dog IMU data.
 <!-- [Jupyter Notebook](https://7969a929c4f90c0e-dot-us-west1.notebooks.googleusercontent.com/lab?authuser=0&username=Kristine_Chen) -->
 
 ---
-[Comparative analysis of different approaches in human activity recognition (HAR)](/kaggle_smartphone_human_activity/analysis)
+[Comparative analysis of different approaches in human activity recognition (HAR)](/kaggle_smartphone_human_activity_analysis)
 <p align="center">
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 </p>
